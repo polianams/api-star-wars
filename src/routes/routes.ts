@@ -1,9 +1,8 @@
 import { Router } from "express";
+import { rootRouteController } from "../controllers/rootRouteController";
 
 const routes = Router();
 
-routes.get("/", (req, res) => {
-  res.json("Hello World!");
-});
+routes.get("/", rootRouteController);
 
 export { routes };
