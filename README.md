@@ -82,7 +82,7 @@ npm install
 npm run dev
 ```
 5. No terminal, aparecerá a seguinte mensagem: `O Servidor está sendo executado na porta 3000.`;
-6. Após exibir a mensagem acima, é necessário configurar o Beekeeper (ou um programa de sua preferência) para gerenciar o banco de dados. Siga as configurações do arquivo `dataBaseconfig.js`, localizado na pasta `src/config`, para se conectar corretamente ao banco de dados;
+6. Após exibir a mensagem acima, é necessário configurar o Beekeeper (ou um programa de sua preferência) para gerenciar o banco de dados. Siga as configurações do arquivo `databaseConfig.js`, localizado na pasta `src/config`, para se conectar corretamente ao banco de dados;
 
 ## 🚀 Tecnologias Utilizadas
 
