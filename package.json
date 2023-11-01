@@ -1,0 +1,19 @@
+{
+  "name": "api-star-wars",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">\r   <img alt=\"GitHub language count\" src=\"https://img.shields.io/github/languages/count/polianams/api-star-wars?color=%2304D361\">",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
