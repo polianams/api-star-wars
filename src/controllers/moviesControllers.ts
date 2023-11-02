@@ -1,5 +1,6 @@
 import { Request, Response } from "express";
 import axios from "axios";
+import { NotFoundError } from "../helpers/errorHelp";
 
 const apiURL = "https://swapi.dev/api/";
 
@@ -17,7 +18,6 @@ export const moviesControllers = async (req: Request, res: Response) => {
 
     return res.status(200).json(modifiedMovieData);
   }
-
   const getMovies = await axios.get(`${apiURL}films`);
   const movieData = getMovies.data.results;
   const modifiedMovieData = movieData.map((movie: any) => {
