@@ -6,8 +6,15 @@ import { apiURL } from "../config/apiUrlConfig";
 
 export const getCharacterController = async (req: Request, res: Response) => {
   const { id } = req.params;
+  const { page } = req.query;
 
-  const getCharacter = await axios.get(`${apiURL}people`);
+  let apiEndpoint = `${apiURL}people`;
+
+  if (page) {
+    apiEndpoint = `${apiURL}people?page=${page}`;
+  }
+
+  const getCharacter = await axios.get(apiEndpoint);
   const characterData = getCharacter.data.results;
 
   if (id) {
