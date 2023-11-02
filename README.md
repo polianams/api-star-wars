@@ -40,6 +40,8 @@ Com esta API REST, os usuários podem realizar as seguintes ações:
 - `Detalhes do Filme`: Retorna informações detalhadas de um filme específico com base no ID fornecido;
 - `Listar Personagens`: Retorna uma lista de todos os personagens notáveis da franquia Star Wars;
 - `Detalhes do Personagem`: Retorna informações detalhadas sobre um personagem específico com base no ID fornecido;
+- `Listar Planetas`: Os usuários podem obter uma lista de todos os planetas do universo de Star Wars;
+- `Detalhes do Filme`: Obtém informações detalhadas de um planeta específico com base no ID fornecido;
 
 🚨🚨🚨 EM BREVE:
 
