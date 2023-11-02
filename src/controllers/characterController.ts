@@ -45,10 +45,9 @@ export const getCharacterController = async (req: Request, res: Response) => {
   const characterNames = await Promise.all(
     characterData.map(async (character: any) => {
       const homeworldName = await getObjectName(character.homeworld);
-      const characterId = Number(character.url.split("/").slice(-2, -1)[0]);
 
       const characterInfo: any = {
-        id: characterId,
+        id: Number(character.url.split("/").slice(-2, -1)[0]),
         name: character.name,
         homeworld: homeworldName,
       };

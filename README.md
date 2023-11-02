@@ -37,16 +37,22 @@ Com esta API REST, os usuários podem realizar as seguintes ações:
 ### ⭐ Funcionalidades Principais:
 
 - `Listar Filmes`: Os usuários podem obter uma lista de todos os filmes da franquia Star Wars;
-- `Detalhes do Filme`: Os usuários podem acessar informações detalhadas de um filme específico, incluindo a data de lançamento e uma breve sinopse;
-- `Listar Personagens`: Os usuários podem visualizar uma lista de todos os personagens notáveis da franquia Star Wars;
-- `Detalhes do Personagem`: Os usuários podem acessar informações detalhadas sobre um personagem específico, , juntamente com detalhes como altura, gênero e participação em filmes específicos;
-- `Registro de Usuário`: Os usuários podem criar uma conta na aplicação fornecendo um nome de usuário e uma senha segura;
-- `Autenticação de Usuário`: Os usuários podem fazer login na aplicação utilizando suas credenciais registradas para acessar recursos protegidos;
-- `Listar Favoritos`: Os usuários autenticados podem visualizar uma lista de seus filmes e personagens favoritos salvos na plataforma;
-- `Adicionar aos Favoritos`: Os usuários autenticados podem adicionar filmes e personagens específicos à sua lista de favoritos para acessá-los facilmente posteriormente;
-- `Remover dos Favoritos`: Os usuários autenticados podem remover filmes e personagens de sua lista de favoritos, se desejarem.
+- `Detalhes do Filme`: Retorna informações detalhadas de um filme específico com base no ID fornecido;
+- `Listar Personagens`: Retorna uma lista de todos os personagens notáveis da franquia Star Wars;
+- `Detalhes do Personagem`: Retorna informações detalhadas sobre um personagem específico com base no ID fornecido;
+
+🚨🚨🚨 EM BREVE:
+
+- `Registro de Usuário`: Permite que os usuários criem uma conta na aplicação fornecendo um nome de usuário e uma senha segura;
+- `Autenticação de Usuário`: Permite que os usuários façam login na aplicação utilizando suas credenciais registradas para acessar recursos protegidos;
+- `Listar Favoritos`: Retorna uma lista de filmes e personagens favoritos do usuário autenticado;
+- `Adicionar aos Favoritos`: Permite que os usuários autenticados adicionem filmes e personagens específicos à sua lista de favoritos;
+- `Remover dos Favoritos`: Permite que os usuários autenticados removam filmes e personagens de sua lista de favoritos, se desejarem;
+- `Deletar Conta`: Permite que os usuários removam todos os dados relacionados a API.
 
 ### 🌟 Funcionalidades Adicionais:
+
+🚨🚨🚨 EM BREVE:
 
 - `Segurança de Dados`: Senhas dos usuários são criptografadas usando Bcrypt para garantir a segurança das informações pessoais;
 - `Token JWT`: A autenticação de usuário é feita por meio de tokens JWT para proteger rotas sensíveis e garantir uma experiência segura;

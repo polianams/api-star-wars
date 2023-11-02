@@ -1,12 +1,12 @@
 import { getObjectName } from "./getObjectUtils";
-import { convertHeight } from "./convertUtils";
+import { formatHeight } from "./convertUtils";
 
 export const extractCharacterInfo = async (character: any) => {
   const homeworldName = await getObjectName(character.homeworld);
 
   const characterInfo: any = {
     name: character.name,
-    height: convertHeight(character.height),
+    height: formatHeight(character.height),
     mass: `${character.mass}kg`,
     skin_color: character.skin_color,
     eye_color: character.eye_color,
