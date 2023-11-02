@@ -12,6 +12,8 @@ export const moviesController = async (req: Request, res: Response) => {
     const modifiedMovieData = {
       title: movieData.title,
       episode_id: movieData.episode_id.toString(),
+      release_date: movieData.release_date,
+      opening_crawl: movieData.opening_crawl.replace(/\r\n/g, " "),
     };
 
     return res.status(200).json(modifiedMovieData);

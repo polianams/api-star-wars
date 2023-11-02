@@ -36,10 +36,10 @@ Com esta API REST, os usuários podem realizar as seguintes ações:
 
 ### ⭐ Funcionalidades Principais:
 
-- `Listar Filmes`: Os usuários podem obter uma lista de todos os filmes da franquia Star Wars, juntamente com detalhes como diretor, data de lançamento e uma breve sinopse;
-- `Detalhes do Filme`: Os usuários podem acessar informações detalhadas de um filme específico, incluindo o elenco, a sinopse completa e outras informações relevantes;
-- `Listar Personagens`: Os usuários podem visualizar uma lista de todos os personagens notáveis da franquia Star Wars, juntamente com detalhes como altura, gênero e participação em filmes específicos;
-- `Detalhes do Personagem`: Os usuários podem acessar informações detalhadas sobre um personagem específico, incluindo sua história de fundo, participação em filmes e outros detalhes relevantes;
+- `Listar Filmes`: Os usuários podem obter uma lista de todos os filmes da franquia Star Wars;
+- `Detalhes do Filme`: Os usuários podem acessar informações detalhadas de um filme específico, incluindo a data de lançamento e uma breve sinopse;
+- `Listar Personagens`: Os usuários podem visualizar uma lista de todos os personagens notáveis da franquia Star Wars;
+- `Detalhes do Personagem`: Os usuários podem acessar informações detalhadas sobre um personagem específico, , juntamente com detalhes como altura, gênero e participação em filmes específicos;
 - `Registro de Usuário`: Os usuários podem criar uma conta na aplicação fornecendo um nome de usuário e uma senha segura;
 - `Autenticação de Usuário`: Os usuários podem fazer login na aplicação utilizando suas credenciais registradas para acessar recursos protegidos;
 - `Listar Favoritos`: Os usuários autenticados podem visualizar uma lista de seus filmes e personagens favoritos salvos na plataforma;
@@ -69,18 +69,24 @@ Antes de começar, verifique se você tem os seguintes requisitos instalados em 
 ### ⚙️ Instalação
 
 1. Clone este repositório em sua máquina local:
-2. Navegue até o diretório do projeto: 
+2. Navegue até o diretório do projeto:
+
 ```
 cd nome_da_pasta
 ```
-3. Instale as dependências através do comando: 
+
+3. Instale as dependências através do comando:
+
 ```
 npm install
 ```
+
 4. Para executa-lo digite no terminal do seu editor de código:
+
 ```
 npm run dev
 ```
+
 5. No terminal, aparecerá a seguinte mensagem: `O Servidor está sendo executado na porta 3000.`;
 6. Após exibir a mensagem acima, é necessário configurar o Beekeeper (ou um programa de sua preferência) para gerenciar o banco de dados. Siga as configurações do arquivo `databaseConfig.js`, localizado na pasta `src/config`, para se conectar corretamente ao banco de dados;
 
@@ -99,6 +105,7 @@ npm run dev
 - `pg ou node-postgres (versão 0.6.2)`: Um cliente PostgreSQL para Node.js que permite interagir com bancos de dados PostgreSQL;
 
 ### Dependências de Desenvolvimento:
+
 - `Nodemon (versão 3.0.1)`: Uma ferramenta que monitora alterações nos arquivos do aplicativo e reinicia automaticamente o servidor durante o desenvolvimento;
 - `TypeScript`: Uma linguagem de programação que se baseia em JavaScript adicionando tipos estáticos para melhorar a robustez e a manutenção do código.
 
