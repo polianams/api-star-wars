@@ -3,6 +3,7 @@ import { rootRouteController } from "../controllers/rootRouteController";
 import { moviesController } from "../controllers/moviesController";
 import { getCharacterController } from "../controllers/characterController";
 import { getPlanetController } from "../controllers/planetController";
+import { createUserController } from "../controllers/userController";
 
 const routes = Router();
 
@@ -16,5 +17,7 @@ routes.get("/character/:id", getCharacterController);
 
 routes.get("/planet", getPlanetController);
 routes.get("/planet/:id", getPlanetController);
+
+routes.post("/user", createUserController);
 
 export { routes };
