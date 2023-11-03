@@ -42,11 +42,11 @@ Com esta API REST, os usuários podem realizar as seguintes ações:
 - `Detalhes do Personagem`: Retorna informações detalhadas sobre um personagem específico com base no ID fornecido;
 - `Listar Planetas`: Os usuários podem obter uma lista de todos os planetas do universo de Star Wars;
 - `Detalhes do Planeta`: Obtém informações detalhadas de um planeta específico com base no ID fornecido;
+- `Registro de Usuário`: Permite que os usuários criem uma conta na aplicação fornecendo um nome de usuário e uma senha segura;
+- `Autenticação de Usuário`: Permite que os usuários façam login na aplicação utilizando suas credenciais registradas para acessar recursos protegidos;
 
 🚨🚨🚨 EM BREVE:
 
-- `Registro de Usuário`: Permite que os usuários criem uma conta na aplicação fornecendo um nome de usuário e uma senha segura;
-- `Autenticação de Usuário`: Permite que os usuários façam login na aplicação utilizando suas credenciais registradas para acessar recursos protegidos;
 - `Listar Favoritos`: Retorna uma lista de filmes e personagens favoritos do usuário autenticado;
 - `Adicionar aos Favoritos`: Permite que os usuários autenticados adicionem filmes e personagens específicos à sua lista de favoritos;
 - `Remover dos Favoritos`: Permite que os usuários autenticados removam filmes e personagens de sua lista de favoritos, se desejarem;
@@ -54,10 +54,11 @@ Com esta API REST, os usuários podem realizar as seguintes ações:
 
 ### 🌟 Funcionalidades Adicionais:
 
-🚨🚨🚨 EM BREVE:
-
 - `Segurança de Dados`: Senhas dos usuários são criptografadas usando Bcrypt para garantir a segurança das informações pessoais;
 - `Token JWT`: A autenticação de usuário é feita por meio de tokens JWT para proteger rotas sensíveis e garantir uma experiência segura;
+
+🚨🚨🚨 EM BREVE:
+
 - `Testes Unitários`: A lógica de negócios é testada usando Jest para garantir que todas as funcionalidades estejam funcionando conforme o esperado.
 
 A documentação detalhada de todos os endpoints e parâmetros será fornecida usando Swagger, oferecendo uma visão clara e interativa de todas as funcionalidades disponíveis na API. Isso facilitará a integração e o uso da API para os desenvolvedores e usuários finais.
