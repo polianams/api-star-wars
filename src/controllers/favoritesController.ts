@@ -6,7 +6,7 @@ import { ConflictError } from "../helpers/errorHelp";
 
 const prisma = new PrismaClient();
 
-export const favoritesController = async (req: Request, res: Response) => {
+export const createFavoriteController = async (req: Request, res: Response) => {
   const { id } = req.params;
   const userId = req.user.id;
 
@@ -27,12 +27,36 @@ export const favoritesController = async (req: Request, res: Response) => {
     );
   }
 
+  const filmName = getCharacter.data.films[0];
+  const planetName = getCharacter.data.homeworld;
+  const starshipName = getCharacter.data.starships[0];
+  const vehicleName = getCharacter.data.vehicles[0];
+
   const favorite = await prisma.favorites.create({
     data: {
-      character_name: characterName,
       user_id: userId,
+      character_name: characterName,
+      film_name: filmName,
+      planet_name: planetName,
+      starship_name: starshipName,
+      vehicle_name: vehicleName,
     },
   });
 
   return res.status(201).json(favorite);
+};
+
+export const listFavoritesController = async (req: Request, res: Response) => {
+  const userId = req.user.id;
+
+  const userFavorites = await prisma.favorites.findMany({
+    where: {
+      user_id: userId,
+    },
+    select: {
+      character_name: true,
+    },
+  });
+
+  return res.status(200).json(userFavorites);
 };

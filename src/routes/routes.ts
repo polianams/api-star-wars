@@ -6,7 +6,7 @@ import { getCharacterController } from "../controllers/characterController";
 import { getPlanetController } from "../controllers/planetController";
 import { createUserController } from "../controllers/userController";
 import { loginController } from "../controllers/loginController";
-import { favoritesController } from "../controllers/favoritesController";
+import { createFavoriteController } from "../controllers/favoritesController";
 
 const routes = Router();
 
@@ -27,7 +27,7 @@ routes.post("/login", loginController);
 routes.post(
   "/favorites/character/:id",
   checkLoggedMiddleware,
-  favoritesController
+  createFavoriteController
 );
 
 export { routes };
