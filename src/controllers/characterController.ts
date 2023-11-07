@@ -1,8 +1,8 @@
 import axios from "axios";
 import { Request, Response } from "express";
-import { getObjectName, getObjectNames } from "../utils/getObjectUtils";
-import { extractCharacterInfo } from "../utils/caracterInfoUtils";
 import { apiURL } from "../config/apiUrlConfig";
+import { extractCharacterInfo } from "../utils/caracterInfoUtils";
+import { getObjectName, getObjectNames } from "../utils/getObjectUtils";
 
 export const getCharacterController = async (req: Request, res: Response) => {
   const { id } = req.params;

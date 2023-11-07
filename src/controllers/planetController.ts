@@ -1,7 +1,7 @@
-import { formatPopulation, formatMeasurement } from "./../utils/convertUtils";
 import axios from "axios";
 import { Request, Response } from "express";
 import { apiURL } from "../config/apiUrlConfig";
+import { formatPopulation, formatMeasurement } from "./../utils/convertUtils";
 
 export const getPlanetController = async (req: Request, res: Response) => {
   const { id } = req.params;

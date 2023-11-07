@@ -2,7 +2,6 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import { Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
-
 import { passwordJwt } from "../config/authConfig";
 import { NotFoundError, UnauthorizedError } from "../helpers/errorHelp";
 

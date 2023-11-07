@@ -1,7 +1,6 @@
 import bcrypt from "bcrypt";
 import { Request, Response } from "express";
 import { PrismaClient } from "@prisma/client";
-
 import { BadRequestError } from "../helpers/errorHelp";
 
 const prisma = new PrismaClient();

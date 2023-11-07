@@ -13,9 +13,5 @@ CREATE TABLE
         id SERIAL PRIMARY KEY,
         user_id INT NOT NULL,
         character_name TEXT,
-        film_name TEXT,
-        planet_name TEXT,
-        starship_name TEXT,
-        vehicle_name TEXT,
         FOREIGN KEY (user_id) REFERENCES users (id)
     );
